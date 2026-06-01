@@ -1,0 +1,29 @@
+name: CI Pipeline - React/Vite
+
+# 1. O Gatilho: Quando esse robô deve rodar?
+on:
+  pull_request:
+    branches: [ "main" ]
+
+# 2. Os Jobs: Onde ele vai rodar?
+jobs:
+  build-and-test:
+    name: Validar Código
+    runs-on: ubuntu-latest
+
+    # 3. Os Passos: O que ele vai fazer?
+    steps:
+      - name: Fazer checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar ambiente Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Versão LTS mais estável
+          cache: 'npm'       # Acelera builds futuros fazendo cache das dependências
+
+      - name: Instalações das dependências limpas
+        run: npm ci
+
+      - name: Garantir que o Build não quebra
+        run: npm run build
