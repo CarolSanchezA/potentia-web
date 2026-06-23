@@ -1,90 +1,86 @@
-import { FiArrowRight, FiShield, FiClock } from 'react-icons/fi';
-import { WHATSAPP_LINK, CTA_LABEL } from '../../data/content';
-import Bubble from '../ui/Bubble';
-import Reveal from '../ui/Reveal';
-import Eyebrow from '../ui/Eyebrow';
-
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-[#f8fcfb] to-white">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="max-w-7xl mx-auto px-6 py-12 md:py-24 flex flex-col lg:flex-row items-center gap-16 lg:gap-8">
+      
+      {/* Coluna da Esquerda (Texto) */}
+      <div className="w-full lg:w-1/2 flex flex-col items-start text-left">
+        <span className="bg-[#E4F1EE] text-potentia-green text-xs font-bold px-4 py-1.5 rounded-full mb-6">
+          Triagem via WhatsApp · gratuita
+        </span>
         
-        {/* Coluna da Esquerda: Textos e Call to Action */}
-        <Reveal>
-          <div className="max-w-xl">
-            <Eyebrow text="Acesso Simplificado à Saúde" />
-            
-            <h1 className="text-[44px] md:text-[56px] leading-[1.1] font-bold text-[#111b21] tracking-tight mb-6 font-sans">
-              O seu cuidado ideal começa com um <span className="text-[#1a5f6a]">simples Olá.</span>
-            </h1>
-            
-            <p className="text-[18px] md:text-[20px] text-gray-600 mb-10 leading-relaxed">
-              Não perca tempo a adivinhar qual o especialista que precisa. Converse com a nossa triagem e nós encaminhamos o seu caso para o profissional certo da nossa equipa multidisciplinar.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <a 
-                href={WHATSAPP_LINK} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group flex items-center justify-center gap-2 px-8 py-4 bg-[#25d366] text-white rounded-full font-bold text-[17px] hover:bg-[#20bd5a] hover:scale-[1.02] transition-all shadow-[0_8px_20px_rgba(37,211,102,0.3)]"
-              >
-                {CTA_LABEL}
-                <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-6 text-[14px] text-gray-500 font-medium">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-[#e8f5f3] text-[#1a5f6a] flex items-center justify-center"><FiShield className="w-4 h-4" /></div>
-                <span>Triagem 100% gratuita</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-[#e8f5f3] text-[#1a5f6a] flex items-center justify-center"><FiClock className="w-4 h-4" /></div>
-                <span>Resposta em ~15 min</span>
-              </div>
-            </div>
-          </div>
-        </Reveal>
-
-        {/* Coluna da Direita: Mockup do Telemóve(WhatsApp */}
-        <Reveal delay={200}>
-          <div className="relative mx-auto max-w-[340px] lg:ml-auto perspective-1000">
-            {/* Elemento de fundo para dar brilho */}
-            <div className="absolute -inset-4 bg-gradient-to-tr from-[#25d366]/20 to-[#1a5f6a]/20 blur-2xl rounded-full"></div>
-            
-            <div className="relative bg-[#efeae2] rounded-[40px] shadow-2xl border-[8px] border-white overflow-hidden transform -rotate-2 hover:rotate-0 transition-transform duration-700">
-              {/* Header do Mockup */}
-              <div className="bg-[#075e54] text-white px-5 py-4 flex items-center gap-3">
-                <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center font-serif italic text-lg">P</div>
-                <div>
-                  <div className="font-semibold text-[15px]">Triagem Potentia</div>
-                  <div className="text-[12px] text-white/80">Online agora</div>
-                </div>
-              </div>
-
-              {/* Corpo do Chat */}
-              <div className="p-5 flex flex-col gap-4 bg-[url('https://i.imgur.com/3q1y4i1.png')] bg-cover bg-center h-[380px]">
-                <Bubble type="out" text="Olá! Gostaria de fazer a minha triagem." time="10:02" />
-                <Bubble type="in" text="Olá! Seja bem-vindo(a) à Potentia. Sou o assistente de triagem." time="10:02" />
-                <Bubble type="in" text="Para começarmos, poderia descrever brevemente o que tem sentido nas últimas semanas?" time="10:03" />
-                <Bubble type="out" text="Tenho tido muitas dores de cabeça e tensão no pescoço..." time="10:05" />
-              </div>
-
-              {/* Input Falso do Mockup */}
-              <div className="bg-[#f0f0f0] p-3 flex items-center gap-2">
-                <div className="flex-1 bg-white rounded-full h-10 px-4 text-gray-400 text-sm flex items-center">
-                  Mensagem...
-                </div>
-                <div className="w-10 h-10 bg-[#00a884] rounded-full flex items-center justify-center text-white">
-                  <FiArrowRight className="w-5 h-5" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </Reveal>
+        <h1 className="text-5xl md:text-7xl font-serif text-potentia-dark leading-tight mb-6">
+          Sua triagem <br />
+          começa numa <br />
+          <span className="italic text-potentia-green">conversa.</span>
+        </h1>
         
+        <p className="text-lg text-gray-600 mb-8 max-w-md leading-relaxed">
+          Sem formulários longos. Só uma mensagem. A Potentia ouve o seu momento e indica o profissional certo da nossa equipa multidisciplinar.
+        </p>
+        
+        <div className="flex items-center gap-4">
+          <button className="bg-potentia-dark text-white px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all">
+            Fazer minha triagem
+          </button>
+          <button className="border border-potentia-dark text-potentia-dark px-8 py-4 rounded-full font-medium hover:bg-white transition-all">
+            Ver a equipe
+          </button>
+        </div>
+        <p className="text-xs text-gray-400 mt-4">↳ resposta em até 15min · sem compromisso</p>
       </div>
+
+      {/* Coluna da Direita (Mockup do WhatsApp) */}
+      <div className="w-full lg:w-1/2 relative flex justify-center">
+        {/* Balão flutuante acima do card */}
+        <div className="absolute -top-4 right-8 bg-white px-4 py-2 rounded-full shadow-sm text-xs font-medium text-gray-600 z-10 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-green-500"></span>
+          assim que vai ser
+        </div>
+
+        {/* O "Celular" */}
+        <div className="w-full max-w-md bg-potentia-chat rounded-[2rem] shadow-xl overflow-hidden border-8 border-white relative">
+          
+          {/* Header do WhatsApp */}
+          <div className="bg-potentia-green px-6 py-4 flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+              <span className="text-potentia-green font-serif font-bold text-xl">P</span>
+            </div>
+            <div>
+              <h3 className="text-white font-medium text-sm">Potentia</h3>
+              <p className="text-white/80 text-xs">online agora</p>
+            </div>
+          </div>
+
+          {/* Área das Mensagens */}
+          <div className="p-6 flex flex-col gap-4">
+            
+            {/* Mensagem Bot */}
+            <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%]">
+              <p className="text-sm text-gray-700">Oi! 👋 Que bom ter você aqui.</p>
+            </div>
+            <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[85%]">
+              <p className="text-sm text-gray-700">Me conta um pouco do que você está buscando?</p>
+            </div>
+
+            {/* Mensagem Utilizador */}
+            <div className="bg-potentia-bubble p-3 rounded-2xl rounded-tr-none shadow-sm max-w-[85%] self-end">
+              <p className="text-sm text-gray-800">Tenho sentido dores no ombro há semanas, queria entender o que pode ser.</p>
+            </div>
+
+            {/* Mensagem Bot */}
+            <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[90%]">
+              <p className="text-sm text-gray-700">Entendi. Posso te conectar com a fisio Carol — ela tem horário ainda essa semana.</p>
+            </div>
+
+            {/* Mensagem Utilizador */}
+            <div className="bg-potentia-bubble p-3 rounded-2xl rounded-tr-none shadow-sm max-w-[60%] self-end">
+              <p className="text-sm text-gray-800">Pode ser! 🙏</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
     </section>
   );
 }
