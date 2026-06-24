@@ -22,7 +22,7 @@ export default function Team() {
   ];
 
   return (
-    <section id="team" className="bg-potentia-bg py-20 md:py-28 overflow-hidden">
+    <section id="team" className="bg-white py-20 md:py-28 overflow-hidden">
       
       {/* Cabeçalho da Secção */}
       <div className="max-w-7xl mx-auto px-6 mb-12">
