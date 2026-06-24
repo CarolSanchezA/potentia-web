@@ -1,7 +1,9 @@
 import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
-import Services from "@/components/sections/Services";
 import Team from "@/components/sections/Team";
+import Services from "@/components/sections/Services";
+import Triage from "@/components/sections/Triage";
+import Faq from "./components/sections/Faq";
 import Footer from "@/components/sections/Footer";
 
 export default function App() {
@@ -11,8 +13,10 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
         <Team />
+        <Services />
+        <Triage />
+        <Faq />
       </main>
       <Footer />
     </div>

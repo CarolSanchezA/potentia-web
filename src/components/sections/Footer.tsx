@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex gap-6 text-sm">
           <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
           <a href="#" className="hover:text-white transition-colors">Privacidade</a>
-          <a href="#" className="hover:text-white transition-colors">Contacto</a>
+          <a href="#" className="hover:text-white transition-colors">Contato</a>
         </div>
       </div>
     </footer>
