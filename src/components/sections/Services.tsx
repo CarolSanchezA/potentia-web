@@ -52,7 +52,7 @@ export default function Services() {
             <div 
               key={svc.id} 
               
-              className="snap-center aspect-square min-w-[65vw] md:min-w-[200px] bg-white p-6 rounded-2xl border-2 border-gray-300 shadow-sm hover:shadow-md hover:border-potentia-green transition-all duration-300 flex flex-col justify-center flex-shrink-0 group/card"
+              className="snap-center aspect-square min-w-[65vw] md:min-w-[200px] bg-white/50 p-6 rounded-2xl border-2 border-gray-300 shadow-sm hover:shadow-md hover:border-potentia-green transition-all duration-300 flex flex-col justify-center flex-shrink-0 group/card"
             >
               <div className="w-10 h-10 rounded-xl bg-potentia-green/10 flex items-center justify-center mb-4 group-hover/card:bg-potentia-green transition-colors duration-300">
                 <span className="text-lg font-bold text-potentia-green group-hover/card:text-white transition-colors duration-300">{svc.id}</span>

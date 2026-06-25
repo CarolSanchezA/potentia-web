@@ -1,10 +1,12 @@
 import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
 import Team from "@/components/sections/Team";
+import Reviews from "@/components/sections/Reviews";
 import Services from "@/components/sections/Services";
 import Triage from "@/components/sections/Triage";
-import Faq from "./components/sections/Faq";
+import Faq from "@/components/sections/Faq";
 import Footer from "@/components/sections/Footer";
+import FloatingWhatsApp from "@/components/sections/FloatingWhatsApp";
 
 export default function App() {
   return (
@@ -14,11 +16,13 @@ export default function App() {
       <main>
         <Hero />
         <Team />
+        <Reviews />
         <Services />
         <Triage />
         <Faq />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
