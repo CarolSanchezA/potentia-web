@@ -1,4 +1,4 @@
-import potentiaLogo from "@/assets/potentiaLogo.png"; // Exemplo de ícone de árvore
+import logo from "@/assets/logo.png"; // Exemplo de ícone de árvore
 
 export default function Navbar() {
   return (
@@ -7,7 +7,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img
-            src={potentiaLogo}
+            src={logo}
             alt="Logo da Clínica Potentia"
             className="h-20 w-auto object-contain"
           />
