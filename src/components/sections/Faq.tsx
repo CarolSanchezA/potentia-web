@@ -9,26 +9,39 @@ export default function Faq() {
   };
 
   const faqs = [
-    {
-      question: "Como sei se é o momento de procurar ajuda psiquiátrica?",
-      answer: "Se está a sentir sintomas que impactam a sua rotina, como tristeza profunda, ansiedade constante, alterações extremas de humor, insónia ou dificuldade de concentração que não passam. Não precisa de estar 'no limite' para pedir ajuda; a prevenção é o melhor caminho."
+     {
+      question: "Quais especialidades compõem a Potentia?",
+      answer: "Para garantir um cuidado integrado e completo, contamos com profissionais altamente capacitados. Nossas especialidades incluem Psicologia, Neuropsicologia, Nutrição, Fonoaudiologia, Serviço Social e Terapias Integrativas."
     },
     {
-      question: "Qual a diferença entre o psiquiatra e o psicólogo?",
-      answer: "O psiquiatra é um médico especializado na biologia e química do cérebro, sendo o único que pode diagnosticar transtornos e prescrever medicação. O psicólogo foca-se na psicoterapia e no comportamento. Na Potentia, ambos trabalham em equipa para o seu bem-estar."
+      question: "Como funciona o primeiro contato e o agendamento?",
+      answer: "Nosso primeiro contato é realizado de forma ágil via WhatsApp. Inicialmente, um sistema automatizado inteligente realiza uma triagem dinâmica para mapear suas necessidades e objetivos. Em seguida, um de nossos representantes assume o contato humano para finalizar o agendamento, garantindo o direcionamento preciso para o profissional mais indicado para sua necessidade."
     },
     {
-      question: "Os medicamentos psiquiátricos causam dependência?",
-      answer: "Este é um mito muito comum. A grande maioria dos medicamentos modernos (como os antidepressivos) não causa dependência. Os poucos que têm esse potencial são prescritos com rigoroso controlo e apenas por curtos períodos. O nosso foco é sempre o tratamento seguro."
+      question: "Como saberei se estou evoluindo no acompanhamento?",
+      answer: "Na Potentia, trabalhamos com métricas e dados concretos, eliminando suposições. Realizamos o acompanhamento gráfico contínuo da sua evolução clínica e do seu desempenho, permitindo que você visualize seus resultados de maneira transparente e objetiva ao longo do tempo."
     },
     {
-      question: "Como funciona a primeira consulta?",
-      answer: "A primeira consulta é uma conversa de acolhimento. O médico fará perguntas sobre o seu histórico de saúde, estilo de vida e o que o(a) trouxe até nós. É um ambiente seguro, sem julgamentos e 100% confidencial, para construirmos juntos um plano de cuidado."
+      question: "Quais metodologias embasam os atendimentos?",
+      answer: "Todas as nossas intervenções utilizam exclusivamente abordagens cientificamente comprovadas. Trabalhamos com métodos fundamentados em evidências rigorosas para garantir que o seu tratamento e o desenvolvimento da sua performance sejam seguros, mensuráveis e altamente eficazes."
     },
     {
-      question: "As minhas informações são mantidas em sigilo?",
-      answer: "Absolutamente. Seguimos rigorosamente o sigilo médico e as leis de proteção de dados. Tudo o que é conversado em consultório é estritamente confidencial e não é partilhado sem o seu consentimento explícito."
+      question: "Posso realizar apenas uma consulta pontual com outra especialidade?",
+      answer: "Sim. Para isso, desenvolvemos o Potentia Sync. Trata-se de uma sessão única, de valor acessível, focada em destravamento de resultados. Se você já faz acompanhamento nutricional, por exemplo, mas sente que questões comportamentais estão limitando sua evolução, o Sync permite um mapeamento estratégico e direto com o profissional de Psicologia. Em apenas um encontro, alinhamos suas metas e entregamos um plano de ação claro."
+    },
+    {
+      question: "Qual é o perfil dos profissionais?",
+      answer: "Você será atendido por especialistas com sólida vivência prática em diferentes ambientes e níveis de complexidade. Nossa expertise abrange desde o contexto clínico até a alta complexidade do ambiente hospitalar, garantindo segurança e excelência técnica em todas as áreas de atuação."
+    },
+    {
+      question: "Qual é o principal objetivo da Potentia?",
+      answer: "Nosso propósito é fornecer as ferramentas e o acompanhamento necessários para que você alcance o seu máximo potencial. Entregamos um atendimento totalmente personalizado, respeitando a sua singularidade e desenhando estratégias que funcionam especificamente para você."
+    },
+    {
+      question: "Quais são as formas de pagamento aceitas?",
+      answer: "Para sua comodidade e segurança, disponibilizamos as seguintes opções de pagamento: PIX, cartão de crédito e cartão de débito."
     }
+
   ];
 
   return (
@@ -41,10 +54,10 @@ export default function Faq() {
             Dúvidas Frequentes
           </span>
           <h2 className="text-3xl md:text-4xl font-serif text-potentia-dark mt-6 leading-tight">
-            Desmistificando a Saúde Mental
+            Clareza e acolhimento para o seu cuidado
           </h2>
           <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-            É normal ter receios antes de dar o primeiro passo. Reunimos as perguntas mais comuns dos nossos pacientes para lhe dar clareza e tranquilidade.
+            É natural ter receios ou dúvidas antes de dar o primeiro passo. Por isso, reunimos as perguntas mais comuns para oferecer a você total transparência e tranquilidade sobre o nosso modelo de atendimento.
           </p>
         </div>
 

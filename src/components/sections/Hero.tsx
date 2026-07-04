@@ -27,7 +27,7 @@ export default function Hero() {
 
           <div className="flex items-center gap-4">
             <button
-              onClick={() => console.log("Chamar API do WhatsApp aqui")}
+              onClick={() => window.open("https://wa.me/5511940271099?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Potentia%20e%20gostaria%20de%20iniciar%20minha%20triagem.", "_blank")}
               className="bg-potentia-dark text-white px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all"
             >
               Fazer minha triagem
@@ -87,7 +87,7 @@ export default function Hero() {
 
               <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[90%]">
                 <p className="text-sm text-gray-700">
-                  Entendi. Posso te conectar com a fisio Carol — ela tem horário
+                  Entendi. Posso te conectar com a fisio — ela tem horário
                   ainda essa semana.
                 </p>
               </div>

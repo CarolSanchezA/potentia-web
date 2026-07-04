@@ -3,17 +3,17 @@ export default function Triage() {
     {
       number: "01",
       title: "O Primeiro Contato",
-      desc: "Basta enviar uma mensagem simples pelo WhatsApp relatando o seu desconforto ou necessidade. Sem formulários longos.",
+      desc: "Basta enviar uma mensagem simples pelo WhatsApp. Você nos conta o seu momento de forma rápida, direta e sem burocracia.",
     },
     {
       number: "02",
-      title: "Escuta Ativa",
-      desc: "A nossa equipa de triagem fará algumas perguntas rápidas e humanizadas para entender o seu quadro clínico com precisão.",
+      title: "Triagem Inteligente",
+      desc: "Nosso sistema inteligente conduz um mapeamento dinâmico. Por meio de perguntas estratégicas, compreendemos o seu quadro, suas demandas e seus objetivos com precisão.",
     },
     {
       number: "03",
       title: "O Especialista Certo",
-      desc: "Com base no seu relato, direcionamos o seu atendimento para o médico mais adequado da nossa equipa multidisciplinar.",
+      desc: "Com base no seu relato, nossa equipe assume o atendimento e direciona você para o profissional mais adequado. Tudo desenhado com um único objetivo: fazer você alcançar o seu verdadeiro potencial.",
     }
   ];
 
@@ -57,8 +57,12 @@ export default function Triage() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <button className="bg-potentia-dark text-white px-8 py-4 rounded-full font-medium hover:bg-potentia-green transition-all duration-300 flex items-center gap-2 shadow-md">
+          <button
+            onClick={() => window.open("https://wa.me/5511940271099?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Potentia%20e%20gostaria%20de%20iniciar%20minha%20triagem.", "_blank")}
+            className="bg-potentia-dark text-white px-8 py-4 rounded-full font-medium hover:bg-potentia-green transition-all duration-300 flex items-center gap-2 shadow-md"
+          >
             Começar a minha triagem agora
+            
           </button>
         </div>
 

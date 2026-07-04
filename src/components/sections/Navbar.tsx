@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
           <a href="#team" className="hover:text-potentia-green transition-colors">Equipe</a>
           <a href="#triage" className="hover:text-potentia-green transition-colors">Triagem</a>
-          <a href="#" className="hover:text-potentia-green transition-colors">Conversas</a>
+          <a href="#reviews" className="hover:text-potentia-green transition-colors">Feedback</a>
           <a href="#faq" className="hover:text-potentia-green transition-colors">FAQ</a>
         </div>
 

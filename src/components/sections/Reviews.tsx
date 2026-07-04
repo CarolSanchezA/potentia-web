@@ -23,19 +23,19 @@ export default function Reviews() {
   ];
 
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section id="reviews" className="bg-white py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-potentia-green bg-potentia-green/10 px-3 py-1 rounded-full">
-            Testemunhos
+            Feedbacks
           </span>
           <h2 className="text-3xl md:text-4xl font-serif text-potentia-dark mt-6 leading-tight">
             Histórias de quem já transformou a sua vida
           </h2>
         </div>
 
-        {/* Grelha de Avaliações */}
+        {/* Grelha de Feedbacks */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((review) => (
             <div 
