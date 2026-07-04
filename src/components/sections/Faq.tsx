@@ -8,6 +8,7 @@ export default function Faq() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  ///////////----------- DATA DE FAQS-----------/////////////
   const faqs = [
      {
       question: "Quais especialidades compõem a Potentia?",
@@ -43,6 +44,10 @@ export default function Faq() {
     }
 
   ];
+ 
+/////////////-- FINAL DATA DE FAQS-----------/////////////
+
+///////////////----------- RENDER DE FAQS-----------/////////////
 
   return (
     <section id="faq" className="bg-potentia-bg py-20 md:py-28">

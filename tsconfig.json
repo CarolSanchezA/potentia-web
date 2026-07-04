@@ -12,7 +12,7 @@
       "@sections/*": ["components/sections/*"],
       "@ui/*": ["components/ui/*"],
       "@assets/*": ["assets/*"],
-      "@data/*": ["data/*"]
+      "@data/*": ["data/*"],
     }
   }
 }
