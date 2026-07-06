@@ -10,14 +10,14 @@ export default function Hero() {
         
         {/* Coluna da Esquerda (Texto) */}
         <div className="w-full lg:w-1/2 flex flex-col items-start text-left">
-          <span className="bg-[#E4F1EE] text-potentia-green text-xs font-bold px-4 py-1.5 rounded-full mb-6">
+          <span className="bg-[#E4F1EE] text-potentia-blue_main text-xs font-bold px-4 py-1.5 rounded-full mb-6">
             Triagem via WhatsApp · gratuita
           </span>
 
           <h1 className="text-5xl md:text-7xl font-serif text-potentia-dark leading-tight mb-6">
             Sua triagem <br />
             começa numa <br />
-            <span className="italic text-potentia-green">conversa.</span>
+            <span className="italic text-potentia-blue_main">conversa.</span>
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 max-w-md leading-relaxed">
@@ -28,16 +28,16 @@ export default function Hero() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => window.open("https://wa.me/5511940271099?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Potentia%20e%20gostaria%20de%20iniciar%20minha%20triagem.", "_blank")}
-              className="bg-potentia-dark text-white px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all"
+              className="bg-potentia-blue_deep text-white px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all"
             >
               Fazer minha triagem
             </button>
 
-            <a href="#team" className="border border-potentia-dark text-potentia-dark px-8 py-4 rounded-full font-medium hover:bg-white transition-all">
+            <a href="#team" className="border border-potentia-blue_main text-potentia-blue_main px-8 py-4 rounded-full font-medium hover:bg-potentia-blue_main hover:text-white transition-all">
               Ver a equipe
             </a>
           </div>
-          <p className="text-xs text-gray-400 mt-4">
+          <p className="text-xs text-black-400 mt-4">
             resposta em até 15min · sem compromisso
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function Hero() {
         {/* Coluna da Direita (Mockup do Celular) */}
         <div className="w-full lg:w-1/2 relative flex justify-center">
           <div className="absolute -top-4 right-8 bg-white px-4 py-2 rounded-full shadow-sm text-xs font-medium text-gray-600 z-10 flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-green-500"></span>
+            <span className="w-2 h-2 rounded-full bg-potentia-blue_deep"></span>
             assim que vai ser
           </div>
 
@@ -53,9 +53,9 @@ export default function Hero() {
           <div className="w-full max-w-md bg-potentia-chat rounded-[2rem] shadow-xl overflow-hidden border-8 border-white relative">
             
             {/* Header do WhatsApp */}
-            <div className="bg-potentia-green px-6 py-4 flex items-center gap-3">
+            <div className="bg-potentia-blue_main px-6 py-4 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
-                <span className="text-potentia-green font-serif font-bold text-xl">
+                <span className="text-potentia-blue_main font-serif font-bold text-xl">
                   P
                 </span>
               </div>

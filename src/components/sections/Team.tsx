@@ -98,34 +98,24 @@ Modalidade presencial e on-line.`,
     },
     {
       name: "Debora Palu",
-      role: "Fisioterapeuta, terapeuta Integrativa  com atuação em Acupuntura, Auriculoterapia, Moxaterapia, Ventosaterapia, Tuiná, Florais de Bach e Laserterapia.",
+      role: "Fisioterapeuta e Terapeuta Integrativa, com atuação em Acupuntura, Auriculoterapia, Moxaterapia, Ventosaterapia, Aromaterapia, Florais de Bach e Laserterapia.",
       initial: "RS",
       image: DeboraImg,
-      bio: ` Tratando dor, ansiedade, sono, desequilíbrios emocionais e suporte integrativo para crianças neurodivergentes e saúde da sua família.
-Atendendo desde Bebês, crianças, adolescentes até adultos e idosos com foco em pediatria integrativa e neurodivergentes.
-Presencial e online.
+      bio: ` Atendendo bebês, crianças, adolescentes, adultos e idosos, oferecendo um cuidado integrativo para o tratamento da dor, ansiedade, distúrbios do sono, desequilíbrios emocionais e promoção da saúde.
+
+Tenho foco em Pediatria Integrativa e no suporte a crianças neurodivergentes, acolhendo também toda a família em sua jornada de saúde e bem-estar.
+
+Atendimento presencial e online.
 `,
     },
     {
       name: "Isis Gomes Vieira",
-      role: "Psicologa",
+      role: "Psicóloga Clínica e Neuropsicóloga",
       initial: "SA",
       image: IsisImg,
-      bio: `com 21 anos de experiência clínica e atuação na saúde pública desde 2018, oferecendo atendimento psicológico especializado para crianças, adolescentes, adultos e idosos, diante das mais diversas demandas emocionais e de sofrimento psíquico.
-
-Atualmente, atuo como psicóloga ocupacional em contexto hospitalar, desenvolvendo palestras, rodas de conversa, grupos terapêuticos e ações voltadas à promoção da saúde mental e prevenção do adoecimento emocional no ambiente de trabalho. Também realizo avaliações de riscos psicossociais e ocupacionais alinhadas às diretrizes da NR-1.
-
-Sou especialista em neuropsicologia, com experiência em avaliação neuropsicológica de adultos e idosos, contribuindo para investigação e compreensão de aspectos cognitivos, emocionais e comportamentais.
-
-Minha prática profissional é marcada por um olhar sensível, ético e acolhedor, buscando oferecer um atendimento humanizado, individualizado e comprometido com a promoção da saúde emocional, qualidade de vida e bem-estar dos pacientes.
-
-Ansiedade
-	•	Estresse e Burnout
-	•	Depressão
-	•	Sofrimento emocional
-	•	Conflitos emocionais e relacionais
-	•	Adoecimento ocupacional
-	•	Saúde emocional e qualidade de vida
+      bio: `Psicóloga clínica com 21 anos de experiência, ofereço atendimento psicológico on-line para adolescentes, adultos e idosos, em um espaço de escuta acolhedora, ética e segura.
+Atuo no atendimento de pessoas que enfrentam ansiedade, estresse, burnout, depressão, dificuldades emocionais, conflitos nos relacionamentos e outros desafios que impactam a saúde mental.
+Sou especialista em Neuropsicologia, o que amplia minha compreensão dos aspectos cognitivos, emocionais e comportamentais, possibilitando um atendimento ainda mais individualizado e fundamentado.
 `,
     },
     {
@@ -162,10 +152,10 @@ Modalidades de atendimento: Online e Presencial
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-widest text-potentia-green bg-potentia-green/10 px-3 py-1 rounded-full">
+            <span className="text-xs font-bold uppercase tracking-widest text-potentia-blue_main bg-potentia-blue_deep/10 px-3 py-1 rounded-full">
               A Nossa Equipe
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif text-potentia-dark mt-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-serif text-potentia-blue_deep mt-6 leading-tight">
               Profissionais Altamente Qualificados
             </h2>
           </div>
@@ -181,7 +171,7 @@ Modalidades de atendimento: Online e Presencial
         {/* Seta Esquerda */}
         <button
           onClick={() => scroll("left")}
-          className="hidden md:flex absolute -left-6 top-1/3 -translate-y-1/2 z-10 w-14 h-14 bg-white rounded-full shadow-lg border border-gray-100 items-center justify-center text-potentia-dark hover:text-potentia-green opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-105"
+          className="hidden md:flex absolute -left-6 top-1/3 -translate-y-1/2 z-10 w-14 h-14 bg-white rounded-full shadow-lg border border-gray-100 items-center justify-center text-potentia-dark hover:text-potentia-blue_main opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-105"
           aria-label="Rolar para a esquerda"
         >
           <PiCaretLeftBold className="text-2xl" />
@@ -208,12 +198,12 @@ Modalidades de atendimento: Online e Presencial
                     className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover/card:scale-105"
                   />
                 ) : (
-                  <span className="text-5xl font-bold text-gray-300 group-hover/card:scale-110 group-hover/card:text-potentia-green transition-all duration-500">
+                  <span className="text-5xl font-bold text-gray-300 group-hover/card:scale-110 group-hover/card:text-potentia-blue_main transition-all duration-500">
                     {doc.initial}
                   </span>
                 )}
 
-                <div className="absolute inset-0 bg-potentia-green/10 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-potentia-blue_main/10 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="bg-white text-potentia-dark text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover/card:opacity-100 transition-all duration-300 translate-y-4 group-hover/card:translate-y-0 shadow-md">
                     Ver perfil
                   </span>
@@ -221,7 +211,7 @@ Modalidades de atendimento: Online e Presencial
               </div>
 
               {/* Textos do Médico */}
-              <h3 className="text-lg font-bold text-potentia-dark group-hover/card:text-potentia-green transition-colors">
+              <h3 className="text-lg font-bold text-potentia-dark group-hover/card:text-potentia-blue_main transition-colors">
                 {doc.name}
               </h3>
               <p className="text-sm text-gray-500 font-medium mt-1 line-clamp-2">
@@ -234,7 +224,7 @@ Modalidades de atendimento: Online e Presencial
         {/* Seta Direita */}
         <button
           onClick={() => scroll("right")}
-          className="hidden md:flex absolute -right-6 top-1/3 -translate-y-1/2 z-10 w-14 h-14 bg-white rounded-full shadow-lg border border-gray-100 items-center justify-center text-potentia-dark hover:text-potentia-green opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-105"
+          className="hidden md:flex absolute -right-6 top-1/3 -translate-y-1/2 z-10 w-14 h-14 bg-white rounded-full shadow-lg border border-gray-100 items-center justify-center text-potentia-dark hover:text-potentia-blue_main opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-105"
           aria-label="Rolar para a direita"
         >
           <PiCaretRightBold className="text-2xl" />
@@ -289,7 +279,7 @@ Modalidades de atendimento: Online e Presencial
 
             {/* Lado Direito: Informações e Currículo (Onde ocorre o scroll) */}
             <div className="w-full md:w-3/5 p-6 md:p-10 flex flex-col overflow-y-auto">
-              <span className="text-xs font-bold uppercase tracking-widest text-potentia-green mb-2 block">
+              <span className="text-xs font-bold uppercase tracking-widest text-potentia-blue_main mb-2 block">
                 {selectedDoctor.role}
               </span>
               <h3 className="text-3xl font-serif text-potentia-dark mb-6">
@@ -319,7 +309,7 @@ Modalidades de atendimento: Online e Presencial
                     );
                     setSelectedDoctor(null);
                   }}
-                  className="bg-potentia-dark text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-potentia-green transition-colors w-full md:w-auto"
+                  className="bg-potentia-dark text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-potentia-blue_main transition-colors w-full md:w-auto"
                 >
                   Agendar Consulta
                 </button>

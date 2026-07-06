@@ -40,7 +40,7 @@ export default function Faq() {
     },
     {
       question: "Quais são as formas de pagamento aceitas?",
-      answer: "Para sua comodidade e segurança, disponibilizamos as seguintes opções de pagamento: PIX, cartão de crédito e cartão de débito."
+      answer: "O pagamento é acordado diretamente entre você e o profissional escolhido, garantindo flexibilidade e autonomia para ambas as partes. A Potentia atua como facilitadora do processo, assegurando que todas as condições sejam formalizadas com transparência e segurança desde o primeiro contato, para que o seu foco permaneça inteiramente na jornada terapêutica."
     }
 
   ];
@@ -50,18 +50,18 @@ export default function Faq() {
 ///////////////----------- RENDER DE FAQS-----------/////////////
 
   return (
-    <section id="faq" className="bg-potentia-bg py-20 md:py-28">
+    <section id="faq" className="bg-transparent py-20 md:py-28">
       <div className="max-w-4xl mx-auto px-6">
         
         {/* Cabeçalho */}
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-potentia-green bg-potentia-green/10 px-3 py-1 rounded-full">
+          <span className="text-xs font-bold uppercase tracking-widest text-potentia-blue_main bg-potentia-blue_main/10 px-3 py-1 rounded-full">
             Dúvidas Frequentes
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif text-potentia-dark mt-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-serif text-potentia-blue_deep mt-6 leading-tight">
             Clareza e acolhimento para o seu cuidado
           </h2>
-          <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-800 mt-4 max-w-2xl mx-auto">
             É natural ter receios ou dúvidas antes de dar o primeiro passo. Por isso, reunimos as perguntas mais comuns para oferecer a você total transparência e tranquilidade sobre o nosso modelo de atendimento.
           </p>
         </div>
@@ -77,8 +77,8 @@ export default function Faq() {
                 
                 className={`border-2 rounded-2xl transition-all duration-300 ${
                   isOpen 
-                    ? 'bg-white border-potentia-green shadow-md' 
-                    : 'bg-transparent border-gray-300 hover:border-potentia-green'
+                    ? 'bg-white border-potentia-blue_main shadow-md' 
+                    : 'bg-transparent border-gray-300 hover:border-potentia-blue_main shadow-sm'
                 }`}
               >
                 {/* Botão da Pergunta */}
@@ -86,11 +86,11 @@ export default function Faq() {
                   onClick={() => toggleFaq(index)}
                   className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none"
                 >
-                  <h3 className={`font-bold transition-colors duration-300 ${isOpen ? 'text-potentia-green' : 'text-potentia-dark'}`}>
+                  <h3 className={`font-bold transition-colors duration-300 ${isOpen ? 'text-potentia-blue_main' : 'text-potentia-dark'}`}>
                     {faq.question}
                   </h3>
                   
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-potentia-green/10 text-potentia-green' : 'bg-gray-200 text-gray-600'}`}>
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-potentia-blue_main/10 text-potentia-blue_main' : 'bg-gray-200 text-gray-600'}`}>
                     <PiCaretDownBold />
                   </div>
                 </button>

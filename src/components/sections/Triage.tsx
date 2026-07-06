@@ -22,10 +22,10 @@ export default function Triage() {
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
-          <span className="text-xs font-bold uppercase tracking-widest text-potentia-green bg-potentia-green/10 px-3 py-1 rounded-full">
+          <span className="text-xs font-bold uppercase tracking-widest text-potentia-blue_main bg-potentia-blue_main/10 px-3 py-1 rounded-full">
             Como Funciona
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif text-potentia-dark mt-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-serif text-potentia-blue_deep mt-6 leading-tight">
             A sua saúde no caminho certo, desde o primeiro minuto.
           </h2>
         </div>
@@ -37,14 +37,14 @@ export default function Triage() {
             {steps.map((step, index) => (
               <div key={index} className="flex flex-col items-center text-center md:items-start md:text-left group">
                 
-                <div className="w-16 h-16 rounded-full bg-potentia-bg border-4 border-white shadow-sm flex items-center justify-center mb-6 group-hover:bg-potentia-green transition-colors duration-300">
-                  <span className="text-xl font-bold text-potentia-dark group-hover:text-white transition-colors duration-300">
+                <div className="w-16 h-16 rounded-full bg-potentia-bg border-4 border-white shadow-sm flex items-center justify-center mb-6 group-hover:bg-potentia-blue_main transition-colors duration-300">
+                  <span className="text-xl font-bold text-potentia-blue_main group-hover:text-white transition-colors duration-300">
                     {step.number}
                   </span>
                 </div>
 
                 {/* Textos */}
-                <h3 className="text-xl font-bold text-potentia-dark mb-3">
+                <h3 className="text-xl font-bold text-potentia-blue_deep mb-3">
                   {step.title}
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed max-w-[280px]">
@@ -59,7 +59,7 @@ export default function Triage() {
         <div className="mt-16 flex justify-center">
           <button
             onClick={() => window.open("https://wa.me/5511940271099?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Potentia%20e%20gostaria%20de%20iniciar%20minha%20triagem.", "_blank")}
-            className="bg-potentia-dark text-white px-8 py-4 rounded-full font-medium hover:bg-potentia-green transition-all duration-300 flex items-center gap-2 shadow-md"
+            className="bg-potentia-dark text-white px-8 py-4 rounded-full font-medium hover:bg-potentia-blue_main transition-all duration-300 flex items-center gap-2 shadow-md"
           >
             Começar a minha triagem agora
             
