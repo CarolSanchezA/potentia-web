@@ -1,27 +1,37 @@
-import Navbar from "@/components/sections/Navbar";
-import Hero from "@/components/sections/Hero";
-import Team from "@/components/sections/Team";
-import Reviews from "@/components/sections/Reviews";
-import Triage from "@/components/sections/Triage";
-import Faq from "@/components/sections/Faq";
-import Footer from "@/components/sections/Footer";
-import FloatingWhatsApp from "@/components/sections/FloatingWhatsApp";
+import { BrowserRouter, useLocation, useNavigate } from "react-router-dom";
+import Home from "@/pages/Home";
+import Modal from "@/components/sections/Modal";
+import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
+import TermosDeUso from "./pages/TermosDeUso";
 
+function AppContent() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const rota = location.pathname;
+
+  return (
+    <>
+      <Home />
+
+      {rota === "/politica-de-privacidade" && (
+        <Modal onClose={() => navigate("/")}>
+          <PoliticaPrivacidade />
+        </Modal>
+      )}
+
+      {rota === "/termos-de-uso" && (
+        <Modal onClose={() => navigate("/")}>
+          <TermosDeUso />
+        </Modal>
+      )}
+    </>
+  );
+}
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white text-potentia-dark font-sans antialiased">
-      {" "}
-      <Navbar />
-      <main>
-        <Hero />
-        <Team />
-        <Reviews />
-        <Triage />
-        <Faq />
-      </main>
-      <Footer />
-      <FloatingWhatsApp />
-    </div>
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
