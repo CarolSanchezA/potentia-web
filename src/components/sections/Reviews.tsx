@@ -17,7 +17,7 @@ Com certeza grande parte do meu progresso deve ser evidenciado pelo tratamento q
     },
     { 
       
-      initials: "R.R.", 
+      initials: "Rebecca Requena", 
       text: "Estou com a Ísis desde Agosto de 2024, e eu falo que não vivo mais sem minha sessão de terapia. Ela é uma pessoa que você pode falar e ser exatamente do jeito que é, pode mostrar sem filtro tudo o que pensa, ela te dá esse conforto na sessão sem julgamentos. Eu sou outra pessoa desde que comecei com ela, desmistifiquei coisas, mudei opiniões, e ela fez eu me entender e me conhecer melhor, saber o por que faço o que faço, olhar as coisas com outros olhos, analisar situações, e ser uma pessoa consequentemente muito mais tranquila. Eu AMO essa mulher, e falo que não largo ela por nada nesse mundo!", 
       tag: "Paciente Verificado" 
     }
