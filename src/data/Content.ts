@@ -1,5 +1,5 @@
 export const WHATSAPP_LINK =
-  "https://wa.me/5511900000000?text=" +
+  "https://wa.me/5511913020039?text=" +
   encodeURIComponent("Olá! Gostaria de fazer minha triagem na Potentia.");
   
 export const logo_src = "/logo.jpeg";

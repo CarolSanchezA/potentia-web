@@ -62,9 +62,9 @@ export default function Team() {
     const prevIndex = (currentIndex - 1 + doctors.length) % doctors.length;
     setSelectedDoctor(doctors[prevIndex]);
   };
-///////////////---------FINAL HOOKS-----------///////////////
+  ///////////////---------FINAL HOOKS-----------///////////////
 
-//////////////////-----DATA--------/////////////////
+  //////////////////-----DATA--------/////////////////
   // 2. Atualizamos o array para incluir 'bio' e 'image'
   const doctors: Doctor[] = [
     {
@@ -72,7 +72,11 @@ export default function Team() {
       role: "Neuropsicóloga",
       initial: "LU",
       image: LuanaImg,
-      bio: "Neuropsicóloga com atuação consolidada no diagnóstico e reabilitação de transtornos do neurodesenvolvimento (TEA, TDAH e Altas Habilidades) e quadros clínicos complexos. Com experiência no setor hospitalar e de urgência psiquiátrica, alia a técnica da Terapia Cognitivo-Comportamental (TCC) a uma abordagem humanizada e baseada em evidências. Atende adolescentes, adultos e idosos, oferecendo suporte especializado em regulação emocional, manejo de estresse e planejamento de carreira.",
+      bio: `Sou mestranda em Neurociência, Psicologia e Comportamento Humano, neuropsicóloga e psicóloga, com experiência clínica no atendimento de adolescentes, adultos e idosos.
+Atuo com avaliação neuropsicológica, reabilitação cognitiva e psicoterapia baseada na Terapia Cognitivo-Comportamental (TCC), oferecendo suporte a pessoas com depressão, ansiedade, transtornos do neurodesenvolvimento (como TEA e TDAH) e outras demandas relacionadas à saúde mental.
+Tenho experiência no setor hospitalar e na urgência psiquiátrica.
+Meu compromisso é caminhar ao seu lado, compreendendo sua história e suas necessidades, para desenvolver estratégias que o ajudem a alcançar seus objetivos e desenvolver todo o seu potencial.
+Modalidade: Presencial`,
     },
     {
       name: "Elaine Fontes",
@@ -160,7 +164,7 @@ Modalidades de atendimento: Online e Presencial
             </h2>
           </div>
           <p className="text-gray-500 max-w-sm text-sm leading-relaxed mb-2">
-            Médicos especialistas dedicados a oferecer um atendimento
+            Especialistas dedicados a oferecer um atendimento
             humanizado, ético e baseado em evidências científicas.
           </p>
         </div>
@@ -230,8 +234,6 @@ Modalidades de atendimento: Online e Presencial
           <PiCaretRightBold className="text-2xl" />
         </button>
       </div>
-
-
 
       {/* 5. MODAL DE DETALHES DO PROFISSIONAL */}
       {selectedDoctor && (
@@ -304,7 +306,7 @@ Modalidades de atendimento: Online e Presencial
                       .getElementById("triage")
                       ?.scrollIntoView({ behavior: "smooth" });
                     window.open(
-                      "https://wa.me/5511940271099?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Potentia%20e%20gostaria%20de%20iniciar%20minha%20triagem.",
+                      "https://wa.me/5511913020039?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Potentia%20e%20gostaria%20de%20iniciar%20minha%20triagem.",
                       "_blank",
                     );
                     setSelectedDoctor(null);

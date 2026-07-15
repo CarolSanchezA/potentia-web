@@ -4,20 +4,21 @@ export default function Reviews() {
   const reviews = [
     { 
       id: 1, 
-      initials: "M. S.", 
-      text: "Acolhimento excepcional desde o primeiro contato. Senti-me seguro para falar sobre as minhas ansiedades sem qualquer julgamento. A equipa é fantástica.", 
+      initials: "Maria Cristina", 
+      text: `Faço acompanhamento com a Luana a alguns anos e sou muito grata por ser acompanhada por alguém tão acolhedora e assertiva.
+Com certeza grande parte do meu progresso deve ser evidenciado pelo tratamento que recebo e consigo recomendar com muita segurança para que se abram a terapia com essa profissional ❤.`, 
       tag: "Paciente Verificado" 
     },
     { 
       id: 2, 
-      initials: "J. R.", 
-      text: "A facilidade da triagem inicial ajudou-me a dar o primeiro passo, que era o mais difícil. O plano de tratamento mudou a minha qualidade de vida.", 
+      initials: "Laís Lanzieri", 
+      text: `A Débora sempre atende minha filha com muito amor, acolhimento e paciência. Isso faz toda diferença para quem tem bebê! Já fizemos tratamento com acupuntura e sessões de laser, e ajudou muito na melhora de sintomas associados a nascimento de dentes e também na época em que teve mão, pé e boca.`, 
       tag: "Paciente Verificado" 
     },
     { 
-      id: 3, 
-      initials: "A. C.", 
-      text: "Profissionais de altíssimo nível. A comunicação fluida entre o psiquiatra e o psicólogo no mesmo espaço fez toda a diferença no meu diagnóstico.", 
+      
+      initials: "R.R.", 
+      text: "Estou com a Ísis desde Agosto de 2024, e eu falo que não vivo mais sem minha sessão de terapia. Ela é uma pessoa que você pode falar e ser exatamente do jeito que é, pode mostrar sem filtro tudo o que pensa, ela te dá esse conforto na sessão sem julgamentos. Eu sou outra pessoa desde que comecei com ela, desmistifiquei coisas, mudei opiniões, e ela fez eu me entender e me conhecer melhor, saber o por que faço o que faço, olhar as coisas com outros olhos, analisar situações, e ser uma pessoa consequentemente muito mais tranquila. Eu AMO essa mulher, e falo que não largo ela por nada nesse mundo!", 
       tag: "Paciente Verificado" 
     }
   ];
@@ -58,9 +59,7 @@ export default function Reviews() {
 
               {/* Rodapé do Card (Iniciais e Tag) */}
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-potentia-green text-white flex items-center justify-center font-bold text-sm">
-                  {review.initials}
-                </div>
+                
                 <div>
                   <h4 className="font-bold text-potentia-dark text-sm">{review.initials}</h4>
                   <span className="text-xs text-potentia-green font-medium">{review.tag}</span>
