@@ -76,7 +76,7 @@ export default function Team() {
 Atuo com avaliação neuropsicológica, reabilitação cognitiva e psicoterapia baseada na Terapia Cognitivo-Comportamental (TCC), oferecendo suporte a pessoas com depressão, ansiedade, transtornos do neurodesenvolvimento (como TEA e TDAH) e outras demandas relacionadas à saúde mental.
 Tenho experiência no setor hospitalar e na urgência psiquiátrica.
 Meu compromisso é caminhar ao seu lado, compreendendo sua história e suas necessidades, para desenvolver estratégias que o ajudem a alcançar seus objetivos e desenvolver todo o seu potencial.
-Modalidade: Presencial`,
+Modalidade: Presencial e Online.`,
     },
     {
       name: "Elaine Fontes",

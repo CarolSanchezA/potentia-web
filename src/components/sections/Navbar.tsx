@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png"; // Exemplo de ícone de árvore
+import logo from "@/assets/logo.jpeg"; // Exemplo de ícone de árvore
 
 export default function Navbar() {
   return (
