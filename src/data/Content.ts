@@ -18,7 +18,7 @@ export const passos = [
   { n: 1, titulo: "Toque no botão",  desc: "Você abre nosso WhatsApp e começará a conversa." },
   { n: 2, titulo: "Conversa breve",  desc: "Algumas perguntas simples sobre o que você está sentindo." },
   { n: 3, titulo: "Indicação certa", desc: "Sugerimos o profissional mais adequado para o seu caso." },
-  { n: 4, titulo: "Agendamento",     desc: "Você escolhe o melhor horário com a nossa equipa." },
+  { n: 4, titulo: "Agendamento",     desc: "Você escolhe o melhor horário com a nossa equipe." },
 ];
 
 export const depoimentos = [
@@ -30,13 +30,13 @@ export const depoimentos = [
 export const perguntas = [
   { q: "Quanto custa a triagem?", a: "A triagem inicial pelo WhatsApp é totalmente gratuita e sem compromisso. Você só decide seguir se fizer sentido pra você." },
   { q: "Vocês atendem convênios?", a: "Trabalhamos com atendimento particular e alguns convênios. Confirmamos as opções disponíveis durante a sua triagem." },
-  { q: "Em quanto tempo vocês respondem?", a: "Em horário comercial, nossa equipa responde em até 15 minutos. Fora desse horário, retornamos assim que possível." },
+  { q: "Em quanto tempo vocês respondem?", a: "Em horário comercial, nossa equipe responde em até 15 minutos. Fora desse horário, retornamos assim que possível." },
   { q: "O atendimento é presencial ou online?", a: "Oferecemos os dois formatos, dependendo da especialidade e da sua preferência. A gente combina o melhor pra você na triagem." },
-  { q: "Preciso saber qual profissional procurar?", a: "Não. Esse é justamente o papel da triagem: a gente escuta o seu momento e indica o profissional mais adequado da nossa equipa." },
+  { q: "Preciso saber qual profissional procurar?", a: "Não. Esse é justamente o papel da triagem: a gente escuta o seu momento e indica o profissional mais adequado da nossa equipe." },
 ];
 
 export const metricas = [
-  { n: "7",   suf: "",         label: "especialidades numa só equipa" },
+  { n: "7",   suf: "",         label: "especialidades numa só equipe" },
   { n: "15",  suf: "min",      label: "tempo médio de resposta" },
   { n: "100", suf: "%",        label: "triagem guiada por dados reais" },
   { n: "1",   suf: " conversa", label: "pra começar seu cuidado" },

@@ -22,7 +22,7 @@ export default function Hero() {
 
           <p className="text-lg text-gray-600 mb-8 max-w-md leading-relaxed">
             Sem formulários longos. Só uma mensagem. A Potentia ouve o seu momento
-            e indica o profissional certo da nossa equipa multidisciplinar.
+            e indica o profissional certo da nossa equipe multidisciplinar.
           </p>
 
           <div className="flex items-center gap-4">
