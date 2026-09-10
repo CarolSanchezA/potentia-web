@@ -1,6 +1,6 @@
 import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
-import Team from "@/components/sections/Team";
+import TeamSection from "@/ui/features/team/TeamSection";
 import Reviews from "@/components/sections/Reviews";
 import Triage from "@/components/sections/Triage";
 import Faq from "@/components/sections/Faq";
@@ -15,7 +15,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Team />
+        <TeamSection />
         <Reviews />
         <Triage />
         <Faq />

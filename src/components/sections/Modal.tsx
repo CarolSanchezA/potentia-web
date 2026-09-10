@@ -1,5 +1,6 @@
 import { ReactNode, useEffect } from "react";
 import { PiXBold } from "react-icons/pi";
+import { useEscapeKey } from "@/ui/hooks/useEscapeKey";
 
 interface ModalProps {
   children: ReactNode;
@@ -7,19 +8,15 @@ interface ModalProps {
 }
 
 export default function Modal({ children, onClose }: ModalProps) {
-  // Fecha com ESC e trava o scroll do fundo enquanto o modal está aberto
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-    window.addEventListener("keydown", handleEsc);
-    document.body.style.overflow = "hidden";
+  useEscapeKey(onClose);
 
+  // Trava o scroll do fundo enquanto o modal está aberto.
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
     return () => {
-      window.removeEventListener("keydown", handleEsc);
       document.body.style.overflow = "";
     };
-  }, [onClose]);
+  }, []);
 
   return (
     <div
