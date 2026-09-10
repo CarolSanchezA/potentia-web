@@ -1,7 +1,7 @@
 import { PiStarFill } from 'react-icons/pi';
 import { TESTIMONIALS } from '@/infrastructure/content/testimonials';
 
-export default function Reviews() {
+export default function TestimonialsSection() {
   return (
     <section id="reviews" className="bg-white py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6">

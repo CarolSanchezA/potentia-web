@@ -1,6 +1,6 @@
 import { openTriageChannel } from "@/infrastructure/triage/whatsAppChannel";
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     // 1. O Outer Wrapper (Capa Externa): 
     // Controla apenas a cor de fundo e garante que estica de ponta a ponta (w-full).

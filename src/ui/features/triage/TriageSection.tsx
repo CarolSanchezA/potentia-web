@@ -1,7 +1,7 @@
 import { TRIAGE_STEPS } from '@/infrastructure/content/triageSteps';
 import { openTriageChannel } from "@/infrastructure/triage/whatsAppChannel";
 
-export default function Triage() {
+export default function TriageSection() {
   return (
     <section id="triage" className="bg-white py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-6">

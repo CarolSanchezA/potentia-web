@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { PiCaretDownBold } from 'react-icons/pi';
 import { FAQ_ENTRIES } from '@/infrastructure/content/faqEntries';
 
-export default function Faq() {
+export default function FaqSection() {
   // Primeira pergunta aberta por padrão.
   const [openId, setOpenId] = useState<string | null>(FAQ_ENTRIES[0].id);
 
