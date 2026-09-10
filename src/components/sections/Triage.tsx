@@ -1,24 +1,7 @@
+import { TRIAGE_STEPS } from '@/infrastructure/content/triageSteps';
 import { openTriageChannel } from "@/infrastructure/triage/whatsAppChannel";
 
 export default function Triage() {
-  const steps = [
-    {
-      number: "01",
-      title: "O Primeiro Contato",
-      desc: "Basta enviar uma mensagem simples pelo WhatsApp. Você nos conta o seu momento de forma rápida, direta e sem burocracia.",
-    },
-    {
-      number: "02",
-      title: "Triagem Inteligente",
-      desc: "Nosso sistema inteligente conduz um mapeamento dinâmico. Por meio de perguntas estratégicas, compreendemos o seu quadro, suas demandas e seus objetivos com precisão.",
-    },
-    {
-      number: "03",
-      title: "O Especialista Certo",
-      desc: "Com base no seu relato, nossa equipe assume o atendimento e direciona você para o profissional mais adequado. Tudo desenhado com um único objetivo: fazer você alcançar o seu verdadeiro potencial.",
-    }
-  ];
-
   return (
     <section id="triage" className="bg-white py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-6">
@@ -36,8 +19,8 @@ export default function Triage() {
           <div className="hidden md:block absolute top-8 left-0 w-full h-[1px] bg-gray-200 z-0"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative z-10">
-            {steps.map((step, index) => (
-              <div key={index} className="flex flex-col items-center text-center md:items-start md:text-left group">
+            {TRIAGE_STEPS.map((step) => (
+              <div key={step.id} className="flex flex-col items-center text-center md:items-start md:text-left group">
                 
                 <div className="w-16 h-16 rounded-full bg-potentia-bg border-4 border-white shadow-sm flex items-center justify-center mb-6 group-hover:bg-potentia-blue_main transition-colors duration-300">
                   <span className="text-xl font-bold text-potentia-blue_main group-hover:text-white transition-colors duration-300">
@@ -50,7 +33,7 @@ export default function Triage() {
                   {step.title}
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed max-w-[280px]">
-                  {step.desc}
+                  {step.description}
                 </p>
 
               </div>

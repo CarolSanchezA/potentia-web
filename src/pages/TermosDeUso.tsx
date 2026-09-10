@@ -1,9 +1,4 @@
-const EMPRESA = {
-  razaoSocial: "POTENTIA APOIO ADMINISTRATIVO LTDA",
-  cnpj: "61.579.902/0001-06",
-  endereco: "Rua Manuel da Nobrega, 354, Conj. 112, Paraíso, São Paulo - SP, 04001-001",
-  email: "potentiasaude@gmail.com",
-};
+import { CLINIC as EMPRESA } from "@/domain/clinic/Clinic";
 
 export default function TermosDeUso() {
   return (

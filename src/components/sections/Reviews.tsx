@@ -1,28 +1,7 @@
 import { PiStarFill } from 'react-icons/pi';
+import { TESTIMONIALS } from '@/infrastructure/content/testimonials';
 
 export default function Reviews() {
-  const reviews = [
-    { 
-      id: 1, 
-      initials: "Maria Cristina", 
-      text: `Faço acompanhamento com a Luana a alguns anos e sou muito grata por ser acompanhada por alguém tão acolhedora e assertiva.
-Com certeza grande parte do meu progresso deve ser evidenciado pelo tratamento que recebo e consigo recomendar com muita segurança para que se abram a terapia com essa profissional ❤.`, 
-      tag: "Paciente Verificado" 
-    },
-    { 
-      id: 2, 
-      initials: "Laís Lanzieri", 
-      text: `A Débora sempre atende minha filha com muito amor, acolhimento e paciência. Isso faz toda diferença para quem tem bebê! Já fizemos tratamento com acupuntura e sessões de laser, e ajudou muito na melhora de sintomas associados a nascimento de dentes e também na época em que teve mão, pé e boca.`, 
-      tag: "Paciente Verificado" 
-    },
-    { 
-      
-      initials: "Rebecca Requena", 
-      text: "Estou com a Ísis desde Agosto de 2024, e eu falo que não vivo mais sem minha sessão de terapia. Ela é uma pessoa que você pode falar e ser exatamente do jeito que é, pode mostrar sem filtro tudo o que pensa, ela te dá esse conforto na sessão sem julgamentos. Eu sou outra pessoa desde que comecei com ela, desmistifiquei coisas, mudei opiniões, e ela fez eu me entender e me conhecer melhor, saber o por que faço o que faço, olhar as coisas com outros olhos, analisar situações, e ser uma pessoa consequentemente muito mais tranquila. Eu AMO essa mulher, e falo que não largo ela por nada nesse mundo!", 
-      tag: "Paciente Verificado" 
-    }
-  ];
-
   return (
     <section id="reviews" className="bg-white py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6">
@@ -38,9 +17,9 @@ Com certeza grande parte do meu progresso deve ser evidenciado pelo tratamento q
 
         {/* Grelha de Feedbacks */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {reviews.map((review) => (
-            <div 
-              key={review.id} 
+          {TESTIMONIALS.map((review) => (
+            <div
+              key={review.id}
               className="bg-potentia-bg/50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between"
             >
               <div>
@@ -61,8 +40,8 @@ Com certeza grande parte do meu progresso deve ser evidenciado pelo tratamento q
               <div className="flex items-center gap-4">
                 
                 <div>
-                  <h4 className="font-bold text-potentia-dark text-sm">{review.initials}</h4>
-                  <span className="text-xs text-potentia-green font-medium">{review.tag}</span>
+                  <h4 className="font-bold text-potentia-dark text-sm">{review.authorName}</h4>
+                  <span className="text-xs text-potentia-green font-medium">{review.badge}</span>
                 </div>
               </div>
             </div>

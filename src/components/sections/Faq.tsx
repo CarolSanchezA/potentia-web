@@ -1,53 +1,15 @@
 import { useState } from 'react';
 import { PiCaretDownBold } from 'react-icons/pi';
+import { FAQ_ENTRIES } from '@/infrastructure/content/faqEntries';
 
 export default function Faq() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0); // Deixamos a primeira aberta por padrão
+  // Primeira pergunta aberta por padrão.
+  const [openId, setOpenId] = useState<string | null>(FAQ_ENTRIES[0].id);
 
-  const toggleFaq = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+  const toggleFaq = (id: string) => {
+    setOpenId(openId === id ? null : id);
   };
 
-  ///////////----------- DATA DE FAQS-----------/////////////
-  const faqs = [
-     {
-      question: "Quais especialidades compõem a Potentia?",
-      answer: "Para garantir um cuidado integrado e completo, contamos com profissionais altamente capacitados. Nossas especialidades incluem Psicologia, Neuropsicologia, Nutrição, Fonoaudiologia, Serviço Social e Terapias Integrativas."
-    },
-    {
-      question: "Como funciona o primeiro contato e o agendamento?",
-      answer: "Nosso primeiro contato é realizado de forma ágil via WhatsApp. Inicialmente, um sistema automatizado inteligente realiza uma triagem dinâmica para mapear suas necessidades e objetivos. Em seguida, um de nossos representantes assume o contato humano para finalizar o agendamento, garantindo o direcionamento preciso para o profissional mais indicado para sua necessidade."
-    },
-    {
-      question: "Como saberei se estou evoluindo no acompanhamento?",
-      answer: "Na Potentia, trabalhamos com métricas e dados concretos, eliminando suposições. Realizamos o acompanhamento gráfico contínuo da sua evolução clínica e do seu desempenho, permitindo que você visualize seus resultados de maneira transparente e objetiva ao longo do tempo."
-    },
-    {
-      question: "Quais metodologias embasam os atendimentos?",
-      answer: "Todas as nossas intervenções utilizam exclusivamente abordagens cientificamente comprovadas. Trabalhamos com métodos fundamentados em evidências rigorosas para garantir que o seu tratamento e o desenvolvimento da sua performance sejam seguros, mensuráveis e altamente eficazes."
-    },
-    {
-      question: "Posso realizar apenas uma consulta pontual com outra especialidade?",
-      answer: "Sim. Para isso, desenvolvemos o Potentia Sync. Trata-se de uma sessão única, de valor acessível, focada em destravamento de resultados. Se você já faz acompanhamento nutricional, por exemplo, mas sente que questões comportamentais estão limitando sua evolução, o Sync permite um mapeamento estratégico e direto com o profissional de Psicologia. Em apenas um encontro, alinhamos suas metas e entregamos um plano de ação claro."
-    },
-    {
-      question: "Qual é o perfil dos profissionais?",
-      answer: "Você será atendido por especialistas com sólida vivência prática em diferentes ambientes e níveis de complexidade. Nossa expertise abrange desde o contexto clínico até a alta complexidade do ambiente hospitalar, garantindo segurança e excelência técnica em todas as áreas de atuação."
-    },
-    {
-      question: "Qual é o principal objetivo da Potentia?",
-      answer: "Nosso propósito é fornecer as ferramentas e o acompanhamento necessários para que você alcance o seu máximo potencial. Entregamos um atendimento totalmente personalizado, respeitando a sua singularidade e desenhando estratégias que funcionam especificamente para você."
-    },
-    {
-      question: "Quais são as formas de pagamento aceitas?",
-      answer: "O pagamento é acordado diretamente entre você e o profissional escolhido, garantindo flexibilidade e autonomia para ambas as partes. A Potentia atua como facilitadora do processo, assegurando que todas as condições sejam formalizadas com transparência e segurança desde o primeiro contato, para que o seu foco permaneça inteiramente na jornada terapêutica."
-    }
-
-  ];
- 
-/////////////-- FINAL DATA DE FAQS-----------/////////////
-
-///////////////----------- RENDER DE FAQS-----------/////////////
 
   return (
     <section id="faq" className="bg-transparent py-20 md:py-28">
@@ -68,13 +30,13 @@ export default function Faq() {
 
         {/* Lista de Perguntas*/}
         <div className="space-y-4">
-          {faqs.map((faq, index) => {
-            const isOpen = openIndex === index;
+          {FAQ_ENTRIES.map((faq) => {
+            const isOpen = openId === faq.id;
 
             return (
-              <div 
-                key={index} 
-                
+              <div
+                key={faq.id}
+
                 className={`border-2 rounded-2xl transition-all duration-300 ${
                   isOpen 
                     ? 'bg-white border-potentia-blue_main shadow-md' 
@@ -83,7 +45,7 @@ export default function Faq() {
               >
                 {/* Botão da Pergunta */}
                 <button
-                  onClick={() => toggleFaq(index)}
+                  onClick={() => toggleFaq(faq.id)}
                   className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 focus:outline-none"
                 >
                   <h3 className={`font-bold transition-colors duration-300 ${isOpen ? 'text-potentia-blue_main' : 'text-potentia-dark'}`}>

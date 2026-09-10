@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  // Só arquivos com markup. As camadas domain/ e infrastructure/ são TypeScript
+  // puro e não contêm classes: incluir ".ts" fazia o Tailwind gerar utilitários
+  // por falso positivo (o `.filter(...)` de um método virava a classe `.filter`).
+  content: ["./index.html", "./src/**/*.{jsx,tsx}"],
   theme: {
     extend: {
       colors: {
