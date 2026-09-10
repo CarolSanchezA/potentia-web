@@ -1,3 +1,5 @@
+import { openTriageChannel } from "@/infrastructure/triage/whatsAppChannel";
+
 export default function Triage() {
   const steps = [
     {
@@ -58,7 +60,7 @@ export default function Triage() {
 
         <div className="mt-16 flex justify-center">
           <button
-            onClick={() => window.open("https://wa.me/5511913020039?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Potentia%20e%20gostaria%20de%20iniciar%20minha%20triagem.", "_blank")}
+            onClick={() => openTriageChannel()}
             className="bg-potentia-dark text-white px-8 py-4 rounded-full font-medium hover:bg-potentia-blue_main transition-all duration-300 flex items-center gap-2 shadow-md"
           >
             Começar a minha triagem agora

@@ -7,6 +7,7 @@ import IsisImg from "@/assets/isis.jpeg";
 import EsterImg from "@/assets/ester.jpeg";
 import RenanImg from "@/assets/renan.jpeg";
 import ElaineImg from "@/assets/elaine.jpeg";
+import { openTriageChannel } from "@/infrastructure/triage/whatsAppChannel";
 
 export default function Team() {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -305,10 +306,7 @@ Modalidades de atendimento: Online e Presencial
                     document
                       .getElementById("triage")
                       ?.scrollIntoView({ behavior: "smooth" });
-                    window.open(
-                      "https://wa.me/5511913020039?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Potentia%20e%20gostaria%20de%20iniciar%20minha%20triagem.",
-                      "_blank",
-                    );
+                    openTriageChannel();
                     setSelectedDoctor(null);
                   }}
                   className="bg-potentia-dark text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-potentia-blue_main transition-colors w-full md:w-auto"

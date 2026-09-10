@@ -16,19 +16,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     
-    /* A Mágica dos Atalhos começa aqui */
+    /* Atalho único de importação. Tudo sob src/ é acessível via "@/..." */
     "paths": {
-      "@/*": ["./src/*"],
-      "@core/*": ["./src/core/*"],
-      "@main/*": ["./src/main/*"],
-      "@routes/*": ["./src/main/routes/*"],
-      "@app/*": ["./src/app/*"],
-      "@pages/*": ["./src/app/pages/*"],
-      "@components/*": ["./src/app/components/*"],
-      "@userInterface/*": ["./src/app/components/userInterface/*"],
-      "@modules/*": ["./src/modules/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "cypress"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
