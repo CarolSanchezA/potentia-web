@@ -81,13 +81,6 @@ Hoje o conteúdo é uma lista estática compilada no bundle. Se um dia vier de u
 
 **As rotas legais são filhas de `/` de propósito.** `/termos-de-uso` renderiza a home **e** o documento como overlay por cima, não uma página separada. Quem mantém isso é o `<Outlet />` em `HomePage.tsx`.
 
-## Relação com o backend
-
-O `potentia-whatsapp-bridge` (NestJS, repositório separado) é a ponte entre a Meta Cloud API e o Typebot. Ele conduz a conversa de triagem.
-
-**Os dois projetos não se comunicam por HTTP.** Este site apenas abre um link `wa.me`. O único acoplamento entre eles é o número de telefone — por isso ele tem uma fonte única aqui. Trocar o número exige trocar também a configuração da Meta no bridge.
-
-Os repositórios são separados de propósito: não há código compartilhado, os deploys são independentes e os ciclos de vida não coincidem. Vale reunir num monorepo no dia em que existir um contrato compartilhado de verdade — por exemplo, um formulário no site que chame o bridge e exija o mesmo tipo dos dois lados.
 
 ## Comandos
 
